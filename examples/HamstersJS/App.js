@@ -28,7 +28,6 @@ import {
 
 import('./ReactotronConfig').then(() => console.log('Reactotron Configured'));
 
-
 import { Worker} from 'react-native-hamsters';
 
 const hamsters = require('hamsters.js');

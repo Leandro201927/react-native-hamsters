@@ -19,7 +19,20 @@ buildscript {
     }
 }
 
+/**
+ * @see https://github.com/facebook/react-native/issues/35229
+ * @bug fix 'Failed to transform react-native-0.71.0-rc.0-debug.aar'
+ * @description forces to use react-native:REACT_NATIVE_VERSION (0.64.0 from reading package.json, in my case) in gradle
+ */
+def REACT_NATIVE_VERSION = new File(['node', '--print',"JSON.parse(require('fs').readFileSync(require.resolve('react-native/package.json'), 'utf-8')).version"].execute(null, rootDir).text.trim())
+
 allprojects {
+    configurations.all {
+        resolutionStrategy {
+            // Remove this override in 0.66, 0.67, 0.68, ... 0.71, as a proper fix is included in react-native itself.
+            force "com.facebook.react:react-native:" + REACT_NATIVE_VERSION
+        }
+    }
     repositories {
         mavenLocal()
         maven {
