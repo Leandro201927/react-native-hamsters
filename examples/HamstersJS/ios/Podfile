@@ -12,6 +12,8 @@ target 'HamstersJS' do
     :hermes_enabled => false
   )
 
+  pod 'RNThread', :path => '../node_modules/react-native-threads'
+
   target 'HamstersJSTests' do
     inherit! :complete
     # Pods for testing

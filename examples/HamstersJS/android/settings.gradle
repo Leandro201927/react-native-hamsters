@@ -3,3 +3,5 @@ apply from: file("../node_modules/@react-native-community/cli-platform-android/n
 include ':app'
 include ':react-native-hamsters'
 project(':react-native-hamsters').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-hamsters/android')
+include ':react-native-threads'
+project(':react-native-threads').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-threads/android')

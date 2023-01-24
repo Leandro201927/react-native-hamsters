@@ -5710,6 +5710,11 @@
     "mockdate" "^3.0.2"
     "string-hash-64" "^1.0.3"
 
+"react-native-threads@^0.0.19":
+  "integrity" "sha512-VAQB06D+qxGDm3XwNUaDtEh1pKEuRLx4w3/E81z+pK1luMyJhK1W0G+eA0xygcM74dShXCgG10ZNvN+LHfyCLg=="
+  "resolved" "https://registry.npmjs.org/react-native-threads/-/react-native-threads-0.0.19.tgz"
+  "version" "0.0.19"
+
 "react-native@*", "react-native@^0.60.6 || ^0.61.5 || ^0.62.2 || ^0.63.2 || ^0.64.0 || 1000.0.0", "react-native@^0.62.0", "react-native@>=0.40.0", "react-native@>=0.5.0", "react-native@>=0.50.0", "react-native@>=0.64.0-rc.0 || 0.0.0-*", "react-native@0.64.2":
   "integrity" "sha512-Ty/fFHld9DcYsFZujXYdeVjEhvSeQcwuTGXezyoOkxfiGEGrpL/uwUZvMzwShnU4zbbTKDu2PAm/uwuOittRGA=="
   "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.64.2.tgz"
